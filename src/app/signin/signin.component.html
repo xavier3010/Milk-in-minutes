@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+<div class="signin-container">
+    <div class="signin-glass">
+        <h2>Sign In</h2>
+        <form (ngSubmit)="signIn()">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="ex:abcd@gmail.com" name="email" class="form-control" [(ngModel)]="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+            </div>
+            <!-- Update the button text to 'Sign In' -->
+            <button type="submit" [innerText]="isSignedIn ? 'Signed In' : 'Sign In'" class="btn btn-primary"></button>
+            <!-- Use the correct property name for ngIf -->
+            <div *ngIf="signInResult !== undefined">{{ signInResult }}</div>
+        </form>
+        <div class="new-user">
+            <a routerLink="/signup">New User? Sign Up</a>
+        </div>
+        <div class="admin-login">
+            <a routerLink="/admin" href="#">Admin Login</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,158 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productname": "Nandini Toned Fresh Milk (Pouch)",
+      "productprice": "45",
+      "category": [
+        "milk",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/milk1.webp",
+      "altText": "Image 1"
+    },
+    {
+      "id": "2",
+      "productname": "Heritage Toned Fresh Milk (Pouch)",
+      "productprice": "25",
+      "category": [
+        "milk",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/milk2.webp",
+      "altText": "Image 2"
+    },
+    {
+      "id": "3",
+      "productname": "Akshayakalpa Organic Pasteurized Cow Fresh Milk (Pouch)",
+      "productprice": "40",
+      "category": [
+        "milk",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/milk3.webp",
+      "altText": "Image 3"
+    },
+    {
+      "id": "4",
+      "productname": "Heritage Special Long Life Toned Milk (Pouch)",
+      "productprice": "32",
+      "category": [
+        "milk",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/milk4.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "5",
+      "productname": "Sid's Farm A2 Buffalo Fresh Milk (Pouch)",
+      "productprice": "54",
+      "category": [
+        "milk",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/milk5.webp",
+      "altText": "Image 1"
+    },
+    {
+      "id": "6",
+      "productname": "Nutralite Doodhshakti Probiotic Butter Spread Made from Creamy Milk Delicious Taste",
+      "productprice": "58",
+      "category": [
+        "butter",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/butter1.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "7",
+      "productname": "Amul Butter - Pasteurised 100 gms Combo",
+      "productprice": "116",
+      "category": [
+        "butter",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/butter2.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "8",
+      "productname": "Mother Dairy Pasteurized Butter",
+      "productprice": "285",
+      "category": [
+        "butter",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/butter3.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "9",
+      "productname": "Delicious Fat Spread - Cholesterol Free",
+      "productprice": "19",
+      "category": [
+        "butter",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/butter4.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "10",
+      "productname": "Mamie Yova French Yogurt Creamy",
+      "productprice": "14",
+      "category": [
+        "yogurt",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/yogurt2.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "11",
+      "productname": "Epigamia Greek Yogurt Alphonso Mango 90 gms Combo",
+      "productprice": "153",
+      "category": [
+        "yogurt",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/yogurt2.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "12",
+      "productname": "Epigamia Natural Greek Yogurt Combo",
+      "productprice": "153",
+      "category": [
+        "yogurt",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/yogurt3.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "13",
+      "productname": "Mamie Yova Deliciously French Fruit Yogurt Mango 90 gms Combo",
+      "productprice": "44",
+      "category": [
+        "yogurt",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/yougurt4.webp",
+      "altText": "Image 4"
+    },
+    {
+      "id": "14",
+      "productname": "Epigamia Blueberry Greek Yogurt 90 gms Combo",
+      "productprice": "110",
+      "category": [
+        "yogurt",
+        "all"
+      ],
+      "imageUrl": "../../assets/images/yogurt5.webp",
+      "altText": "Image 4"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+
+<app-header></app-header>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            Your Cart
+          </div>
+          <div class="card-body">
+            <div *ngIf="cartItems.length === 0" class="text-center">
+              Your cart is empty.
+            </div>
+            <div *ngFor="let item of cartItems" class="mb-3">
+              <div class="d-flex justify-content-between">
+                <div>{{ item.productname }}</div>
+                <div>
+                  <button class="btn btn-sm btn-outline-secondary" (click)="decreaseQuantity(item)">-</button>
+                  <span class="mx-2">{{ item.quantity }}</span>
+                  <button class="btn btn-sm btn-outline-secondary" (click)="increaseQuantity(item)">+</button>
+                </div>
+                <div>₹{{ item.productprice }}</div>
+              </div>
+              <img [src]="item.imageUrl" [alt]="item.altText" class="img-fluid" style="max-height: 100px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Number of Items: {{ getTotalItems() }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Total Price: ₹{{ getTotalPrice() }}</h6>
+            <button class="btn btn-primary btn-block" (click)="placeOrder()" [disabled]="cartItems.length === 0">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

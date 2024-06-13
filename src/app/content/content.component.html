@@ -1,0 +1,70 @@
+<div class="content">
+    <div class="sidebar">
+        <ul>
+            <li><a (click)="filterByCategory('all')">All</a></li>
+            <li><a (click)="filterByCategory('milk')">Milk</a></li>
+            <li><a (click)="filterByCategory('butter')">butter</a></li>
+            <li><a (click)="filterByCategory('yogurt')">yogurt</a></li>
+        <!-- Add more categories as needed -->
+        </ul>
+    </div>
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <!-- Repeat this grid item for each product or content -->
+            <ng-container *ngFor="let product of products">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="grid-item">
+                        <div class="card">
+                            <div img-card>
+                                <img class="card-img-top" [src]="product.imageUrl" [alt]="product.altText">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">{{ product.productname }}</h6>
+                                <h6 class="card-price">₹ {{ product.productprice }}</h6>
+                                <button (click)="addToCart(product.id)" class="btn btn-primary btn-add-to-cart">
+                                    {{ product.addedToCart ? 'Added' : 'Add' }}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <!-- Add more grid items as needed -->
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+<div class="content">
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a (click)="filterProducts('all')">All</a></li>
+            <li><a (click)="filterProducts('milk')">Milk</a></li>
+    
+        </ul>
+    </div>
+    <div class="container-fluid container-custom">
+        <div class="row">
+            <ng-container *ngFor="let product of products">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="grid-item">
+                        <div class="card">
+                            <div img-card>
+                                <img class="card-img-top" [src]="product.imageUrl" [alt]="product.altText">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">{{ product.productname }}</h6>
+                                <h6 class="card-price">₹ {{ product.productprice }}</h6>
+                                <button (click)="addToCart(product.id)" class="btn btn-primary btn-add-to-cart">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+</div> -->

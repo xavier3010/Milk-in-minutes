@@ -1,0 +1,26 @@
+.card {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .card-header {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .btn-place-order {
+    margin-top: 20px;
+  }
+  .btn {
+    background-color: #4CAF50;
+    border: none;
+  }
+  .btn:hover{
+    background-color: #295e2b;
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      width: 100%;
+    }
+  }

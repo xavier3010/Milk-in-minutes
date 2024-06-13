@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  .icon-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 20px;
+    background: none;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    transition: .15s;
+}
+.icon {
+    margin-top: -15px;
+    font-size: 17px;
+    position: absolute;
+}
+  .home-btn,
+  .add-product-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .home-btn:hover,
+  .add-product-btn:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f8f9fa;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s;
+  }
+  
+  tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  

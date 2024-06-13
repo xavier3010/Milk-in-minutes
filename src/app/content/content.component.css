@@ -1,0 +1,183 @@
+.sidebar{
+    margin-top: 100px;
+}
+.content{
+    display: flex;
+}
+.sidebar {
+    background-color: #ffffff;
+    width: 200px;
+    float: left;
+    margin-top: 90px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 18px;
+    transition: 0.1s;
+    text-align: center;
+    
+}
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    padding: 5px 15px;
+    transition: color 0.1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #000000;
+    color: white;
+}
+.main-content {
+    margin-left: 270px; /* Adjust according to sidebar width */
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.product h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.product p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+.card-img-top{
+    align-items: center;
+
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.img-card{
+    text-align: center;
+    height: 120px;
+    width: 120px;
+}
+.card{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-body{
+    padding: 0px;
+}
+.card-title{
+    padding-bottom: 2px;
+    margin: 0px;
+}
+.container-custom {
+    margin-top: 90px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.row {
+    margin: -5px; /* Adjust the negative margin to reduce the gap */
+}
+.col-6,
+.col-md-4,
+.col-lg-3,
+.col-xl-2 {
+    padding: 5px;
+}
+
+@media (min-width: 576px) {
+    .container-custom {
+        max-width: 540px; /* Adjust as needed */
+    }
+}
+@media (min-width: 768px) {
+    .container-custom {
+        max-width: 720px; /* Adjust as needed */
+    }
+}
+@media (min-width: 992px) {
+    .container-custom {
+        max-width: 960px; /* Adjust as needed */
+    }
+}
+@media (min-width: 1200px) {
+    .container-custom {
+        max-width: 1140px; /* Adjust as needed */
+    }
+}
+
+.grid-item {
+    height: 100%;
+}
+
+.card {
+    height: 100%;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(186, 186, 186);/* Make the card position relative */
+}
+
+.card-img-top {
+    max-height: 150px;
+    width: auto;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 60px; /* Adjust the gap between product names */
+}
+
+.card-price {
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+}
+
+.btn-add-to-cart {
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #000000; /* Change to desired color */
+    border-color: #ffffff; /* Change to desired color */
+    color: white;
+}
+.btn-add-to-cart:active{
+    background-color: #5a5a5a;
+}

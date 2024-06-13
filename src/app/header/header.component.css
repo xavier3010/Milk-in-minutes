@@ -1,0 +1,281 @@
+
+nav {
+    color: white;
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    height: 50px;
+    border-radius: 30px;
+}
+
+.bgcolor {
+    display: flex;
+    background-image: linear-gradient(180deg, #4CAF50, rgb(227, 227, 227));
+}
+
+nav .milk-logo {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+nav .logo {
+    float: left;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+.links {
+  /* Adjusted padding for better spacing */
+    align-items: center;
+}
+
+ul.links {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.icon {
+    margin-top: -15px;
+    font-size: 17px;
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    padding-right: 10px;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    padding-right: 40px;
+    padding-top: 3px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 20px;
+    background: none;
+}
+
+a:hover {
+    color: white;
+    transition: .15s;
+}
+
+/* New CSS for search bar */
+.search-bar {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    margin: 0 0px; /* Adjust margin for spacing */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+.icon-search{
+	color: #000000;
+}
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust as needed */
+}
+.search-icon:hover{
+	color: #000000;
+}
+
+.search-icon i {
+    font-size: 24px; /* Adjust as needed */
+    color: white; /* Change the color as needed */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .search-icon {
+        display: none; /* Hide the search icon on smaller screens if needed */
+    }
+}
+
+
+
+
+/*
+nav{
+    color: white;
+	position: absolute;
+    right: 15px;
+    left: 15px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    height: 50px;
+    border-radius: 30px;
+}
+.bgcolor{
+	display: flex;
+    background-image: linear-gradient(180deg, rgb(31, 52, 75), rgb(255, 255, 255));
+}
+nav .milk-logo{
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+nav .logo {
+		float: left;
+		width: 230px;
+		height: 100%;
+		display: flex;
+		text-align: center;
+        color: #000000;
+        text-align: center;
+}
+h2{
+    margin-top: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+}
+h1{
+    margin: 0px;
+    text-align: center;
+}
+.links{
+	padding-left: 80px;
+	align-items: center;
+}
+ul.links{
+	margin-bottom: 0px;
+	display: flex;
+    align-items: center;
+}
+.icon-holder{
+	display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally
+    text-align: center;
+	font-size: 10px;
+	margin-top: 15px;
+}
+.icon{
+	margin-top: -15px;
+	font-size: 17px;
+	position:absolute;
+}
+ul{
+    list-style-type: none;
+    float: right;
+	padding-right: 10px;
+}
+li{
+    position:relative;
+}
+li{
+    display: inline-block;
+	padding-right: 40px;
+	padding-top: 3px;
+}
+a{
+    background-color: rgb(28, 246, 225);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    align-items: center;
+	border-radius: 20px;
+	background: none;
+}
+
+a:hover{
+	color: white;
+	transition: .15s;
+} */
+
+/*
+@media screen and (max-width: 900px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height:auto;
+		display:inline-flex;
+		padding:0px;
+		margin-top: 0px;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: rgba(109, 109, 109, 0.848);
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+		margin-top: 0px;
+		
+	}
+} */

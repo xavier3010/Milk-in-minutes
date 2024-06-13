@@ -1,0 +1,32 @@
+<div>
+    <nav class="bgcolor">
+        <div class="logo">
+            <img class="milk-logo" src="../../assets/images/2.svg" alt="">
+            <h2>Milk in minutes</h2>
+        </div>
+        <div class="search-bar">
+            <!-- Add your search bar HTML here -->
+            <input type="text" placeholder="Search Products" [(ngModel)]="searchTerm" (input)="onSearch()">
+            <div class="search-icon">
+                <!-- Replace this with your desired icon -->
+                <i class="icon-search" class="material-icons">search</i>
+            </div>
+        </div>
+        <ul class="links">
+            <li><a class="icon-holder" routerLink=""><mat-icon class="icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon><span>home</span></a></li>
+            <li *ngIf="!isLoggedIn">
+                <a class="icon-holder" routerLink="/signin">
+                  <mat-icon class="icon">account_circle</mat-icon>Sign In
+                </a>
+              </li>
+              <li *ngIf="isLoggedIn">
+                <a class="icon-holder"  ><mat-icon class="icon" (click)="signOut()" >exit_to_app</mat-icon><span>Sign out</span></a>
+              </li>
+            <li><a class="icon-holder" routerLink="/cart"><mat-icon class="icon">shopping_cart</mat-icon><span>Cart</span></a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+

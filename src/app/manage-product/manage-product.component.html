@@ -1,0 +1,20 @@
+<!-- manage-product.component.html -->
+<div class="header">
+    <h2>Manage Products</h2>
+    <a routerLink="/admin" class="link">
+      <button class="back-button">Admin</button>
+    </a>
+  </div>
+  
+<div *ngFor="let product of products" class="product-card">
+  <div class="product-info">
+    <p><strong>Product Name:</strong> {{ product.productname }}</p>
+    <p><strong>Product Price:</strong> {{ product.productprice }}</p>
+    <p><strong>Category:</strong> {{ product.category.join(', ') }}</p>
+    <p><strong>Alt Text:</strong> {{ product.altText }}</p>
+    <!-- Add more product details as needed -->
+  </div>
+  <div class="actions">
+    <button class="delete-button" (click)="deleteProduct(product.id)">Delete</button>
+  </div>
+</div>

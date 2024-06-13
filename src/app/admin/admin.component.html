@@ -1,0 +1,80 @@
+<!-- admin.component.html -->
+<div class="header">
+    <a class="icon-holder" routerLink=""><mat-icon class="icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon><span>home</span></a>
+    <a routerLink="/manage-product" href=""><button class="add-product-btn" >Remove-product</button></a>
+    <a routerLink="/add-product" href=""><button class="add-product-btn" >Add Product</button></a>
+  </div>
+  
+<div class="container">
+    <h2>Order Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Username</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+          <td>{{ order.username }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let product of order.products">
+                {{ product.productname }}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let product of order.products">
+                ₹{{ product.productprice }}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let product of order.products">
+                {{ product.quantity }}
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- <div class="product-form-container" *ngIf="showProductForm">
+    <h2>Add Product</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmitProduct()" class="product-form">
+      <div class="form-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" formControlName="productName" required>
+      </div>
+      <div class="form-group">
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" formControlName="productPrice" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" formControlName="category" required>
+          <option value="">Select Category</option>
+          <option value="milk">Milk</option>
+          <option value="all">All</option>
+          Add more options as needed
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" formControlName="imageUrl">
+      </div>
+      <div class="form-group">
+        <label for="altText">Alt Text:</label>
+        <input type="text" id="altText" formControlName="altText">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
